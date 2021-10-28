@@ -1,0 +1,45 @@
+body{
+    background-color: #f00c0cb2;
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+header{
+    text-align: center;
+}
+main{
+    border-bottom:1px solid #ccc;
+    background-color: #ece7e2bd;
+} 
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer{
+    background-color: #fff;
+    text-align: center;
+}
+p{
+    font-size:50%;
+    text-align: center;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #ffe91f;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    border-radius: 100vh;
+}
+li:hover{
+    background: #ff8800bd;
+    color:#fff;
+}

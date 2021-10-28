@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>おみくじ</title>
+</head>
+<body>
+
+<header>
+    <h1>おみくじ</h1>
+</header>
+
+<main>
+    <ul>
+        <li id="pull">おみくじを引く</li>
+    </ul>
+    <p id="moji">あなたの運勢は</p>
+    <p id="echo"></p>
+    <p id="photo"></p>
+</main>
+
+<footer></footer>
+<script>
+
+const moji = document.querySelector("#moji");
+moji.style.color = "#ff0000";
+
+//Clickイベントのブロック
+const pull = document.querySelector("#pull");
+pull.onclick = function(){
+    //乱数を創る
+    const num = Math.ceil(Math.random() * 6);
+
+    //乱数をIF分岐処理で分ける
+    //条件に合っていればalert()で表示
+    if(num==1){
+        const echo = document.querySelector("#echo");
+        echo.innerHTML="大吉";
+    }
+    if(num==2){
+        const echo = document.querySelector("#echo");
+        echo.innerHTML="中吉";
+    }
+    if(num==3){
+        const echo = document.querySelector("#echo");
+        echo.innerHTML="小吉";
+    }
+    if(num==4){
+        const echo = document.querySelector("#echo");
+        echo.innerHTML="吉";
+    }
+    if(num==5){
+        const echo = document.querySelector("#echo");
+        echo.innerHTML="末吉";
+    }
+    if(num==6){
+        const echo = document.querySelector("#echo");
+        echo.innerHTML="凶";
+    }
+
+
+    //画像
+    if(num==1){
+        const photo = document.querySelector("#photo");
+        photo.innerHTML='<img src="daikichi.png">';
+    }
+    if(num==2){
+        const photo = document.querySelector("#photo");
+        photo.innerHTML='<img src="chuukichi.png">';
+    }
+    if(num==3){
+        const photo = document.querySelector("#photo");
+        photo.innerHTML='<img src="syoukichi.png">';
+    }
+    if(num==4){
+        const photo = document.querySelector("#photo");
+        photo.innerHTML='<img src="kichi.png">';
+    }
+    if(num==5){
+        const photo = document.querySelector("#photo");
+        photo.innerHTML='<img src="suekichi.png">';
+    }
+    if(num==6){
+        const photo = document.querySelector("#photo");
+        photo.innerHTML='<img src="kyou.png">';
+    }
+}
+
+</script>
+</body>
+</html>
