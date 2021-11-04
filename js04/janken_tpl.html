@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>じゃんけん</title>
+</head>
+<body>
+
+<header>
+  <h1>じゃんけん</h1>
+</header>
+
+<main>
+  <ul>
+    <li id="gu_btn">グー</li>
+    <li id="cho_btn">チョキ</li>
+    <li id="par_btn">パー</li>
+  </ul>
+  <div>コンピュータの出した手は？「<span id="pc_hands">なに？</span>」</div>
+  <div id="photo"></div>
+  <div id="judgment">勝負</div>
+</main>
+
+<footer></footer>
+<script>
+//じゃんけん用のSCRIPTを書いてください
+
+//グー
+$("#gu_btn").on("click", function(){
+    const num = Math.ceil(Math.random() * 3);
+    if(num == 1){
+    $("#pc_hands").html("グー");
+    }
+    if(num == 2){
+    $("#pc_hands").html("チョキ");
+    }
+    if(num == 3){
+    $("#pc_hands").html("パー");
+    }
+    if(num == 1){
+      $("#judgment").html("引き分け");
+      $("#judgment").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+      $("#judgment").css("background","#fcbe54");
+    }
+    if(num == 2){
+      $("#judgment").html("あなたの勝ち");
+      $("#judgment").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+      $("#judgment").css("background","#ff7996");
+    }
+    if(num == 3){
+      $("#judgment").html("あなたの負け");
+      $("#judgment").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+      $("#judgment").css("background","#5ca3ff");
+    }
+    if(num == 1){
+      $("#photo").html('<img src="gu.png">')
+      $("#photo").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    }
+    if(num == 2){
+      $("#photo").html('<img src="cho.png">')
+      $("#photo").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    }
+    if(num == 3){
+      $("#photo").html('<img src="par.png">')
+      $("#photo").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    }
+});
+
+//チョキ
+$("#cho_btn").on("click", function(){
+    const num = Math.ceil(Math.random() * 3);
+    if(num == 1){
+    $("#pc_hands").html("グー");
+    }
+    if(num == 2){
+    $("#pc_hands").html("チョキ");
+    }
+    if(num == 3){
+    $("#pc_hands").html("パー");
+    }
+    if(num == 1){
+      $("#judgment").html("あなたの負け");
+      $("#judgment").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+      $("#judgment").css("background","#5ca3ff");
+    }
+    if(num == 2){
+      $("#judgment").html("引き分け");
+      $("#judgment").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+      $("#judgment").css("background","#fcbe54");
+    }
+    if(num == 3){
+      $("#judgment").html("あなたの勝ち");
+      $("#judgment").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+      $("#judgment").css("background","#ff7996");
+    }
+    if(num == 1){
+      $("#photo").html('<img src="gu.png">')
+      $("#photo").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    }
+    if(num == 2){
+      $("#photo").html('<img src="cho.png">')
+      $("#photo").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    }
+    if(num == 3){
+      $("#photo").html('<img src="par.png">')
+      $("#photo").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    }
+});
+
+//パー
+$("#par_btn").on("click", function(){
+    const num = Math.ceil(Math.random() * 3);
+    if(num == 1){
+    $("#pc_hands").html("グー");
+    }
+    if(num == 2){
+    $("#pc_hands").html("チョキ");
+    }
+    if(num == 3){
+    $("#pc_hands").html("パー");
+    }
+    if(num == 1){
+      $("#judgment").html("あなたの勝ち");
+      $("#judgment").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+      $("#judgment").css("background","#ff7996");
+    }
+    if(num == 2){
+      $("#judgment").html("あなたの負け");
+      $("#judgment").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+      $("#judgment").css("background","#5ca3ff");
+    }
+    if(num == 3){
+      $("#judgment").html("引き分け");
+      $("#judgment").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+      $("#judgment").css("background","#fcbe54");
+    }
+    if(num == 1){
+      $("#photo").html('<img src="gu.png">')
+      $("#photo").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    }
+    if(num == 2){
+      $("#photo").html('<img src="cho.png">')
+      $("#photo").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    }
+    if(num == 3){
+      $("#photo").html('<img src="par.png">')
+      $("#photo").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    }
+});
+
+    
+
+</script>
+</body>
+</html>
