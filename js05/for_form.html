@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>繰り返し処理：for</title>
+<script src="js/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+
+<!-- セレクトボックス作成[START] -->
+<label for="birthday">生年月日（西暦）： </label>
+
+<select id="year"></select>
+
+<select name="seireki" id="seireki">
+    <option value="seireki">西暦を選択</option>
+    <option value="m">明治</option>
+    <option value="t">大正</option>
+    <option value="s">昭和</option>
+    <option value="h">平成</option>
+    <option value="r">令和</option>
+</select>
+
+<select id="month"></select>
+
+<select id="date"></select>
+
+<label for="bloodtype">血液型： </label>
+    <select name="bloodtype" id="bloodtype">
+      <option value="choice">選択してください</option>
+      <option value="A">A型</option>
+      <option value="B">B型</option>
+      <option value="O">O型</option>
+      <option value="AB">AB型</option>
+    </select>
+
+<label for="bloodtype">出身地： </label>
+    <select name="syusshin" id="syusshin">
+        <option value="syusshin">都道府県</option>
+        <option value="prefecture01">北海道</option>
+        <option value="prefecture02">青森県</option>
+        <option value="prefecture03">岩手県</option>
+        <option value="prefecture04">宮城県</option>
+        <option value="prefecture05">秋田県</option>
+        <option value="prefecture06">山形県</option>
+        <option value="prefecture07">福島県</option>
+        <option value="prefecture08">茨城県</option>
+        <option value="prefecture09">栃木県</option>
+        <option value="prefecture10">群馬県</option>
+        <option value="prefecture11">埼玉県</option>
+        <option value="prefecture12">千葉県</option>
+        <option value="prefecture13">東京都</option>
+        <option value="prefecture14">神奈川県</option>
+        <option value="prefecture15">新潟県</option>
+        <option value="prefecture16">富山県</option>
+        <option value="prefecture17">石川県</option>
+        <option value="prefecture18">福井県</option>
+        <option value="prefecture19">山梨県</option>
+        <option value="prefecture20">長野県</option>
+        <option value="prefecture21">岐阜県</option>
+        <option value="prefecture22">静岡県</option>
+        <option value="prefecture23">愛知県</option>
+        <option value="prefecture24">三重県</option>
+        <option value="prefecture25">滋賀県</option>
+        <option value="prefecture26">京都府</option>
+        <option value="prefecture27">大阪府</option>
+        <option value="prefecture28">兵庫県</option>
+        <option value="prefecture29">奈良県</option>
+        <option value="prefecture30">和歌山県</option>
+        <option value="prefecture31">鳥取県</option>
+        <option value="prefecture32">島根県</option>
+        <option value="prefecture33">岡山県</option>
+        <option value="prefecture34">広島県</option>
+        <option value="prefecture35">山口県</option>
+        <option value="prefecture36">徳島県</option>
+        <option value="prefecture37">香川県</option>
+        <option value="prefecture38">愛媛県</option>
+        <option value="prefecture39">高知県</option>
+        <option value="prefecture40">福岡県</option>
+        <option value="prefecture41">佐賀県</option>
+        <option value="prefecture42">長崎県</option>
+        <option value="prefecture43">熊本県</option>
+        <option value="prefecture44">大分県</option>
+        <option value="prefecture45">宮崎県</option>
+        <option value="prefecture46">鹿児島県</option>
+        <option value="prefecture47">沖縄県</option>
+    </select>
+<!-- セレクトボックス作成[END] -->
+
+<script>
+//年:1900~2022
+let y = ""; //例) y += '<option value="'+i+'">'+i+'</option>';
+for(let i=1868; i<=2021; i++){ //<=同じ値まで
+    y += '<option value="'+i+'">'+i+'</option>'; //選択ボックス
+}
+$("#year").html(y);
+
+//月:1~12
+let m = "";
+for(let i=1; i<13; i++){
+    m +='<option value="'+i+'">'+i+'</option>';
+}
+$("#month").html(m);
+//日:1~31
+let d = "";
+for(let i=1; i<32; i++){
+    d +='<option value="'+i+'">'+i+'</option>';
+}
+$("#date").html(d);
+
+
+
+</script>
+</body>
+</html>
