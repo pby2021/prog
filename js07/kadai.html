@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>console.logで確認</h1>
+    <script>
+        //「関数」のプログラムを二つ作りました。
+
+        //その１
+        function sample(name, age){
+            console.log(name + "さんの年齢は" + age + "です。");
+        }
+
+        sample("A", 30);
+        sample("B", 25);
+        sample('C', 20);
+
+
+        //その２
+        //const moneyを10000以上にするとお金持ちと表示される
+        //const moneyを5000以下にすると貧乏と表示される
+        const money = 5000;
+        if (money >= 10000) {
+            console.log("お金持ち");
+        } else if (money >= 5000){
+            console.log("普通");
+        } else {
+            console.log("貧乏");
+        }
+    </script>
+    
+</body>
+</html>
