@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(191, 207, 219);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 32px;
+  }
+  
+  header {
+    background-color: rgb(67, 67, 255);
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    color: #fff;
+  }
+  
+  main {
+    border-bottom: 1px solid #ccc;
+  }
+
+  h1{
+    font-size: 70px;
+    background-color: rgb(67, 67, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    height: 20px;
+    font-family:monospace;
+  }
+  
+  ul {
+    padding: 0;
+    border-top: 1px solid #000000;
+    display: table;
+    /* 定義 */
+    table-layout: fixed;
+    width: 100%;
+  }
