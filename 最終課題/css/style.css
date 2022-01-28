@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* =======================================================
+ *   ページ全体
+ * ======================================================= */
+body{
+  margin: 0;
+  border-top: 20px solid rgb(41, 101, 217);
+  color: rgb(41, 101, 217);
+  background: rgb(162, 204, 231);
+  font-family: sans-serif;
+}
+main, #footlinks{
+  margin: 1.2rem;
+}
+a:link, a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(242, 131, 210);
+}
+h1, h2, h3, h4 {
+  margin: 0;
+  color: rgb(41, 101, 217); 
+  line-height: 1;
+}
+
+/* =======================================================
+ *   ヘッダー
+ * ======================================================= */
+header{
+  margin-top: 36px;
+  text-align: center;
+}
+#logo, img{
+  vertical-align: bottom;
+}
+nav ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin: 36px 2px 2px;
+  padding: 0;
+}
+nav li{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+nav a{
+  display: block;
+  margin: 2px;
+  padding: 0.4rem 0;
+  background: transparent;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+nav a:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(242, 131, 210);
+}
+nav+picture img{
+  width: 100vw;
+  vertical-align: bottom;
+}
+
+/* =======================================================
+ *   メインコンテンツ
+ * ======================================================= */
+main {
+  margin-bottom: 2.4rem;
+}
+h1 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  text-shadow: 3px 3px 5px;
+}
+h2 {
+  margin-top: 2rem;
+  font-size: 1rem;
+  background: rgb(41, 101, 217);
+  padding: 5px;
+  color: rgb(255,255,255);
+}
+h3 {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+h4 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+p {
+  margin: 1rem 0 0 2.5rem;
+  font-size: 1rem;
+}
+
+/* =======================================================
+ *   フッター
+ * ======================================================= */
+footer{
+  padding-top: 0.5rem;
+  padding-bottom: 1.4rem;
+  background: rgb(36, 126, 134);
+}
+#footlinks ul, #footlinks li{
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+#footlinks h4{
+  font-size: 1rem;
+}
+#footlinks a{
+  text-decoration: none;
+}
+#footlinks a:hover{
+  text-decoration: underline;
+}
+#page_top{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: rgb(242, 131, 210);
+  border-radius: 50%;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#Copyright{
+  color: #999;
+  text-align: center;
+  font-size: 0.82rem;
+}
+/* ======================================================
+ *	表組み
+ *	===================================================== */
+table, td, th{
+  border: 1px solid gray;
+  color: #000;
+}
+table{
+  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.top_c{
+  background-color: rgba(128, 128, 128, 0.363);
+}
+.left1{
+  width: 5%;
+}

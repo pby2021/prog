@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ASOBINO MORI</title>
+    <link rel="icon" type="image/x-icon" href="images/kirikabu.png">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/tablet.css" rel="stylesheet" type="text/css" media="screen and (min-width: 600px) and (max-width: 999px)"/>
+    <link href="css/pc.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="images/gazou.png" alt="ゲーム"></a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+          jQuery(function() {
+          var pagetop = $('#page_top');   
+          pagetop.hide();
+          $(window).scroll(function () {
+          if ($(this).scrollTop() > 200) {  //200pxスクロールしたら表示
+            pagetop.fadeIn();
+          } else {
+            pagetop.fadeOut();
+          }
+          });
+            $('a[href^="#"]').click(function(){
+              var time = 500;
+              var href= $(this).attr("href");
+              var target = $(href == "#" ? 'html' : href);
+              var distance = target.offset().top;
+              $("html, body").animate({scrollTop:distance}, time, "swing");
+              return false;
+            });
+          });
+        </script>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="janken.html">じゃんけん</a></li>
+          <li><a href="omikuji.html">おみくじ</a></li>
+          <li><a href="seiza.html">占いの館</a></li>
+          <li><a href="quiz.html">頭の体操</a></li>
+          <li><a href="canvas.html">芸術のお家</a></li>
+        </ul>
+      </nav>
+      <picture>
+        <img src="images/map.png" alt="日本一のデザイナーを目指します">
+      </picture>
+    </header>
+
+    <main>
+      <article>
+        <h1>あそびの森</h1>
+        <h2>ホーム</h2>
+        <h3><a href="janken.html">じゃんけん</a></h3>
+          <p><a href="janken.html"><img src="images/janken.png" width="250" height="170px" alt="じゃんけん"></a></p>
+        <h3><a href="omikuji.html">おみくじ</a></h3>
+          <p><a href="omikuji.html"><img src="images/omikuji.png" width="200" height="180px" alt="おみくじ"></a></p>
+        <h3><a href="seiza.html">占いの館</a></h3>
+          <p><a href="seiza.html"><img src="images/seiza.png" width="200" alt="占いの館"></a></p>
+        <h3><a href="quiz.html">頭の体操</a></h3>
+          <p><a href="quiz.html"><img src="images/quiz.png" width="200" alt="頭の体操"></p>
+        <h3><a href="canvas.html">芸術のお家</a></h3>
+          <p><a href="canvas.html"><img src="images/canvas.png" width="200" alt="芸術のお家"></a></p>
+      </article>
+    </main>
+
+    <footer>
+      <div id="footlinks">
+        <section>
+          <h4><a href="janken.html">じゃんけん</a></h4>
+        </section>
+        <section>
+          <h4><a href="omikuji.html">おみくじ</a></h4>
+        </section>
+        <section>
+          <h4><a href="seiza.html">占いの館</a></h4>
+        </section>
+        <section>
+          <h4><a href="quiz.html">頭の体操</a></h4>
+        </section>
+        <section>
+        <h4><a href="canvas.html">芸術の館</a></h4>
+        </section>
+      </div>
+
+      <div id="page_top"><a href="#"></a></div>
+
+      <p id="Copyright">
+      <small>&copy; 2022 ******. All rights reserved.</small>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+body{
+  background-color: #22187c;
+  margin:0;
+  padding:0;
+  text-align:left;
+  font-size: 32px;
+}
+header{
+  text-align: center;
+}
+main{
+  border-bottom:1px solid #ccc;
+  background-color: #ece7e2bd;
+} 
+h1{
+  font-size: 50px;
+  font-family:serif;
+  color: #fff;
+}
+h3{
+  font-size: 10px;
+}
+a:link, a:visited {
+  background-color: #ccc;
+  color: #0474c4;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff0000;
+}
+footer{
+  text-align: center;
+}
+p{
+  font-size:50%;
+  text-align: center;
+}
+#moji{
+  font-size:100%
+}
+#seiza{
+  text-align: left;
+  font-size: 15px;
+}
+ul{
+  padding: 0;
+  display:table;  /* 定義 */
+  table-layout: fixed;
+  width:100%;
+}
+li{
+  text-align: center;
+  list-style-type:none;
+  background-color: #ffe91f;
+  display:table-cell;  /* 定義 */
+  cursor: pointer;
+  border-radius: 100vh;
+}
+li:hover{
+  background: #000000;
+  color:#fff;
+}
+#Copyright{
+  color: #999;
+  text-align: center;
+  font-size: 0.82rem;
+}
+
+/* ======================================================
+ *	表組み
+ *	===================================================== */
+table, td, th{
+  border: 1px solid gray;
+  color: #000;
+  font-size: 10px;
+}
+table{
+  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.top_c{
+  background-color: rgba(128, 128, 128, 0.363);
+}
+.left1{
+  width: 5%;
+}

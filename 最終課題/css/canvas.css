@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(255, 250, 213);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 32px;
+}
+header {
+  background-color: rgb(67, 67, 255);
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: #fff;
+}
+main {
+  border-bottom: 1px solid #ccc;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: #00eeff;
+}
+h3{
+  text-align: center;
+  font-size: 10px;
+  padding-left: 20px;
+}
+a:link, a:visited {
+  background-color: rgb(255, 255, 255);
+  color: #0474c4;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff0000;
+}
+p{
+  text-align: center;
+  font-size: 20px;
+  padding-left: 20px;
+  height: 20px;
+  font-family:monospace;
+} 
+ul{
+  padding: 0;
+  border-top: 1px solid #000000;
+  display: table;
+  /* 定義 */
+  table-layout: fixed;
+  width: 100%;
+}
+#Copyright{
+  color: #999;
+  text-align: center;
+  font-size: 0.82rem;
+}
+nav{
+  text-align: center;
+}

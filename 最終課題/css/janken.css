@@ -1,0 +1,71 @@
+body{
+  background-color: #fff1dab0;
+  margin:0;
+  padding:0;
+  text-align:left;
+  font-size: 32px;
+}
+header{
+  background-color: #ffa70e;
+  text-align: center;
+}
+footer{
+  background-color: #fff1dab0;
+  text-align: center;
+}
+h1{
+  font-size: 50px;
+}
+h2{
+  font-size: 25px;
+  color: #ff0000;
+}
+h3{
+  font-size: 10px;
+}
+a:link, a:visited {
+  background-color: #ccc;
+  color: #0474c4;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff0000;
+}
+p{
+  font-size:200%;
+  text-align: center;
+  height:0px;
+}
+div{
+  text-align: center;
+}
+ul{
+  padding: 0;
+  display:table;  /* 定義 */
+  table-layout: fixed;
+  width:100%;
+}
+li{
+  text-align: center;
+  list-style-type:none;
+  border: 1px solid #ffa70e;
+  display:table-cell;  /* 定義 */
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 10px 5px 10px;
+  text-decoration: none;
+  color: #ffa70e;
+  background: #fff1da;
+  border-bottom: solid 4px #ffa70e;
+  border-radius: 15px 15px 0 0;
+  transition: .4s;
+}
+li:hover{
+  background: #ffc25c;
+  color:#fff;
+}
+#Copyright{
+  color: #999;
+  text-align: center;
+  font-size: 0.82rem;
+}
